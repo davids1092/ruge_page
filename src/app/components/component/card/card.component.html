@@ -1,0 +1,22 @@
+<div class="card">
+ 
+    <div class="p1">
+        <img [src]="card.imagen" alt="">
+        <h2 class="tittle">{{card.name}}</h2>
+        <p>{{card.descripcion}}</p>
+    </div>
+ 
+
+    <div class="p2">
+        <h2 class="tittle">{{card.name}}</h2>
+        <ul>
+            <li *ngFor="let item of card.temas">
+                {{item}}
+            </li>
+        </ul>
+        <div class="botonera-card">
+            <button class="btn btn-danger">Ver</button>
+        </div>
+     
+    </div>
+</div>
