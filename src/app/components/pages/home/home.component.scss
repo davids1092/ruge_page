@@ -15,9 +15,6 @@
         width: 100%; 
         position: absolute;
         bottom: 0;
-      
-        
-        
     }
 }
 .color{
@@ -117,6 +114,7 @@
     width: 100%;
     display: flex;
     margin-top: 40px ;
+    flex-wrap: wrap;
     background: #e2dced;
    
     
@@ -156,7 +154,7 @@
     width: 50%;
     border-radius: 50px;
     height: 70%;
-    box-shadow: 0 0 10px rgb(179, 174, 174);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 @keyframes pulse {
     0% {
@@ -178,6 +176,10 @@
     .header h1{
         font-size: 100px;
         text-align: center;
+        left: 10px;
+    }
+    .wave{
+        display: none;
     }
     .h1{
         font-size: 50px;
@@ -186,4 +188,25 @@
     .footer .icons{
         width: 100%;
     }
+    .color{
+      display: none;
+       
+        
+    }
+    .header img{ 
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .section2 .div1 , .div2{
+        width: 100% !important;
+        height: 400px;
+    }
+    .section2 .div1 h2{
+        font-size: 50px;
+    }
+    .section2 .div2 img {
+        width: 80%;
+    }
+   
   }

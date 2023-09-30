@@ -27,8 +27,8 @@
   }
 .box img{
   
-    width: 400px;
-    height: 400px;
+    width: 60%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 1px 1px 20px var(--primary);
@@ -38,16 +38,16 @@
 }
 @keyframes pulse {
     0% {
-        width: 400px;
+        width: 60%;
       box-shadow: 1px 1px 20px var(--primary);
     }
     50% {
-        width: 420px;
+        width: 65%;
       box-shadow: 1px 1px 200px var(--primary); /* Ampliar el box-shadow a la mitad de la animación */
     }
    
     100% {
-        width: 400px;
+        width: 60%;
       box-shadow:1px 1px 20px var(--primary);
     }
   }
@@ -178,4 +178,14 @@
   }
   
   
-  
+  @media (max-width: 600px) {
+    .box{
+      width: 80%;
+
+      img{
+        width: 80% !important;
+        height: auto !important;
+       
+      }
+    }
+  }
