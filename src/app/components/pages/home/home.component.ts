@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../../component/dialog/dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -101,12 +103,15 @@ export class HomeComponent  implements OnInit {
       ]
     },
   ]
+
+
+
  
   ngOnInit(): void {
     this.banner = 'assets/img/cruz-cristiana-naturaleza.jpg'
     this.iconWhatsaap = 'assets/img/icon_whatsaap.png' 
     this.banner2 = 'assets/img/never.jpg' 
-    this.photo = 'assets/img/testimonio.jpg' 
+    this.photo = 'assets/img/testimonio.jpg'  
   
   }
 

@@ -59,6 +59,7 @@
 }
 
 .card .back .link {
+  width: 100%;
   border-top: solid 1px #f3f3f3;
   height: 50px;
   line-height: 50px;
@@ -66,6 +67,8 @@
 
 .card .back .link a {
   color: #f3f3f3;
+  width: 100%;
+  display: block;
 }
 
 .card .back h3 {

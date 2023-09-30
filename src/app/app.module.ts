@@ -8,6 +8,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app_material/app-material';
 import { CardComponent } from './components/component/card/card.component';
+import { DialogComponent } from './components/component/dialog/dialog.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CardComponent } from './components/component/card/card.component';
     AppComponent,
     InicioComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,

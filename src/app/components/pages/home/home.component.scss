@@ -172,8 +172,8 @@
       box-shadow:1px 1px 20px var(--primary);
     }
   }
-
-  @media (max-width: 600px) {
+ 
+  @media (max-width: 800px) {
     .header h1{
         font-size: 100px;
         text-align: center;
