@@ -5,24 +5,23 @@
   margin: 20px;
   background: transparent;
   cursor: pointer;
-
-
-
+  perspective: 1000px;
 }
 
 .card .face {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
   border-radius: 20px;
   overflow: hidden;
-  transition: .5s;
+  transition: transform 0.5s, opacity 0.5s, visibility 0.5s; /* Añadimos opacity y visibility a la transición */
 }
 
 .card .front {
-  transform: perspective(600px) rotateY(0deg);
+  transform: rotateY(0deg);
   box-shadow: 0 0 10px rgb(243, 241, 241);
+  opacity: 1; /* La cara frontal es visible */
+  visibility: visible; /* La cara frontal es visible */
 }
 
 .card .front img {
@@ -45,8 +44,8 @@
 }
 
 .card .back {
-  transform: perspective(600px) rotateY(180deg);
-  background-color: rgb(255, 255, 255,0.3);
+  transform: rotateY(180deg);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(20px);
   padding: 15px;
@@ -56,6 +55,8 @@
   justify-content: space-between;
   text-align: center;
   box-shadow: 0 0 10px rgb(243, 241, 241);
+  opacity: 0; /* La cara trasera está oculta */
+  visibility: hidden; /* La cara trasera está oculta */
 }
 
 .card .back .link {
@@ -79,14 +80,16 @@
 
 .card .back p {
   letter-spacing: 1px;
-  
-} 
+}
 
 .card:hover .front {
-  transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
+  opacity: 0; /* Ocultar la cara frontal al girar */
+  visibility: hidden; /* Ocultar la cara frontal al girar */
 }
 
 .card:hover .back {
-  transform: perspective(600px) rotateY(360deg);
+  transform: rotateY(0deg);
+  opacity: 1; /* Mostrar la cara trasera al girar */
+  visibility: visible; /* Mostrar la cara trasera al girar */
 }
-
