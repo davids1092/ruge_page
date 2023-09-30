@@ -3,7 +3,9 @@
   width: 300px;
   height: 350px;
   margin: 20px;
-  background: transparent
+  background: transparent;
+  cursor: pointer;
+
 }
 
 .card .face {
@@ -18,7 +20,7 @@
 
 .card .front {
   transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
+  box-shadow: 0 0 10px rgb(243, 241, 241);
 }
 
 .card .front img {
@@ -35,8 +37,9 @@
   height: 45px;
   line-height: 45px;
   color: #fff;
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.514);
   text-align: center;
+  font-family: poppins-bold !important;
 }
 
 .card .back {
@@ -48,7 +51,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 0 5px 10px #000;
+  box-shadow: 0 0 10px rgb(243, 241, 241);
 }
 
 .card .back .link {
@@ -69,6 +72,7 @@
 
 .card .back p {
   letter-spacing: 1px;
+  
 } 
 
 .card:hover .front {
@@ -78,3 +82,4 @@
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
+
