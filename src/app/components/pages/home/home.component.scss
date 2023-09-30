@@ -1,22 +1,24 @@
 .container_principal_home{
     width: 100%;
     min-height: 100vh;
-    background-color: var(--fondo);
+    // background: rgb(11,3,37);
+background: linear-gradient(180deg, rgba(11,3,37,1) 0%, rgba(15,4,51,1) 61%, rgba(73,50,149,1) 100%);
+    position: relative; 
  
 }
 .header{
     width: 100%;
-    height: 400px;
+    height: 600px;
     position: relative;
     .wave{
-        width: 100%;
+        width: 100%; 
         position: absolute;
         bottom: 0;
         height: 50%;
         
     }
 }
-.header img{
+.header img{ 
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -41,9 +43,76 @@
     font-size: 60px;
     margin: 20px auto;
     font-family: poppins-bold;
+ 
 }
 
 
+.floating{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    box-shadow: 0 0 10px var(--secondary);
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+    
+}
+.floating img{
+    width: 100%;
+    
+   
+}
+.header h1{
+    color: #ccc0db;
+    position: absolute;
+    font-family: poppins-bold;
+    font-size: 200px;
+    top: 50%;
+    left: 50px;
 
+
+}
+.h4{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+   
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #1d0e4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer svg{
+    font-size: 50px;
+}
+.footer .icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes pulse {
+    0% {
+        width: 80px;
+      box-shadow: 1px 1px 20px var(--primary);
+    }
+    50% {
+        width: 85px;
+      box-shadow: 1px 1px 200px var(--primary); /* Ampliar el box-shadow a la mitad de la animación */
+    }
+   
+    100% {
+        width: 80px;
+      box-shadow:1px 1px 20px var(--primary);
+    }
+  }
 
   

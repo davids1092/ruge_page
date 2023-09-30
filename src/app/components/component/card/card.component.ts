@@ -6,11 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
+  
 
   @Input() card!: any;
  
   ngOnInit(): void {
-    console.log(this.card)
+    console.log(this.card) 
   }
 
 }
