@@ -46,7 +46,9 @@
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: var(--primary);
+  background-color: rgb(255, 255, 255,0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(20px);
   padding: 15px;
   color: #f3f3f3;
   display: flex;
